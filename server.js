@@ -16,8 +16,7 @@ app.use(cors({
 }));
 
 // MongoDB URI from environment or fallback (replace with your real URI)
-const mongoURI = process.env.MONGO_URI || 
-  'mongodb+srv://Gaurang0904:Gaurang%400904@cluster0.mbpo9pj.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
+const mongoURI = process.env.MONGO_URI ||process.env.AZURE_COSMOS_CONNECTIONSTRING;;
 
 // Import Menu model
 const MenuItem = require('./models/menu');
