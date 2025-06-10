@@ -10,7 +10,7 @@ const app = express();
 const PORT = process.env.PORT || 4000;
 
 app.use(cors({
-  origin: 'https://frontendfoodapp-hzh4dbgcd8dud4bm.canadacentral-01.azurewebsites.net/',
+  origin: 'https://frontendfoodapp-hzh4dbgcd8dud4bm.canadacentral-01.azurewebsites.net',
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   credentials: true,
 }));
