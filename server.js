@@ -10,13 +10,13 @@ const app = express();
 const PORT = process.env.PORT || 4000;
 
 app.use(cors({
-  origin: 'https://frontend-azure-c4azd7fngvfadgdq.canadacentral-01.azurewebsites.net',
+  origin: 'https://frontendfoodapp-hzh4dbgcd8dud4bm.canadacentral-01.azurewebsites.net/',
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   credentials: true,
 }));
 
 // MongoDB URI from environment or fallback (replace with your real URI)
-const mongoURI = process.env.MONGO_URI ||process.env.AZURE_COSMOS_CONNECTIONSTRING;;
+const mongoURI =process.env.AZURE_COSMOS_CONNECTIONSTRING;;
 
 // Import Menu model
 const MenuItem = require('./models/menu');
